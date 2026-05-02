@@ -19,7 +19,7 @@ int main()
 
     int acc1 = 111, acc2 = 222;       //계좌 번호
     
-    float balance1 = 100000, balance2 = 50000;       //계좌 잔액
+    float balance1 = 50000, balance2 = 100000;       //계좌 잔액
     
     float interest_rate1 = 0.05, interest_rate2 = 0.03;      //이자율
 
@@ -73,5 +73,5 @@ int main()
 	
 	return 0;
 
-	
+
 }
