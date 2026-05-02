@@ -19,7 +19,7 @@ int main()
 
     int acc1 = 111, acc2 = 222;       //계좌 번호
     
-    int balance1 = 100000, balance2 = 50000;       //계좌 잔액
+    float balance1 = 100000, balance2 = 50000;       //계좌 잔액
     
     float interest_rate1 = 0.05, interest_rate2 = 0.03;      //이자율
 
@@ -47,7 +47,7 @@ int main()
     {
     	balance1 = balance1 - withdraw;
     	balance1 = balance1 + (balance1 * interest_rate1);
-    	printf("%c님 111번 계좌 잔액 : %d원 \n", initial, balance1);
+    	printf("%c님 111번 계좌 잔액 : %.0f원 \n", initial, balance1);
 	}
 	
 	//계좌2. 계좌번호가 일치하고 출금액이 잔액보다 작거나 같은 경우
@@ -55,7 +55,7 @@ int main()
 	{
 		balance2 = balance2 - withdraw;
 		balance2 = balance2 + (balance2 * interest_rate2);
-		printf("%c님 222번 계좌 잔액 : %d원 \n", initial, balance2);
+		printf("%c님 222번 계좌 잔액 : %.0f원 \n", initial, balance2);
 	}
 	
 	//계좌번호가 틀렸거나 잔액이 부족한 경우 
